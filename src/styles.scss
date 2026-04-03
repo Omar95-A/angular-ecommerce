@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+// * {
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+// }
+body {
+    margin: 0;
+}
+.w-100 {
+    width: 100% !important;
+    display:  block !important;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small Screens */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium Screens */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Larg Screens */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* X Larg Screens */
+@media (min-width: 1400px) {
+    .container {
+        width: 1300px;
+    }
+}
+
+
+
+.footer {
+    background-color: #282c2f;
+    color: #f8faf8;
+    padding: 20px;
+    margin-top: 40px;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer .adrees {}
+.footer .adrees ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer .adrees ul li {
+    margin: 20px;
+}
+.footer .adrees ul li i {
+    border: 1px solid #f8faf8;
+    padding: 8px;
+    border-radius: 50%;
+}
+.footer .adrees ul li span {
+    margin-left: 10px;
+}
+.footer .desc {
+    width: 400px;
+}
+.footer .desc h4 {
+    font-size: 22px;
+}
+.footer .desc p {
+    line-height: 1.8;
+}

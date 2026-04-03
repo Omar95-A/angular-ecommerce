@@ -1,1 +1,58 @@
-<p>register works!</p>
+<div class="container">
+    <h2>Register</h2>
+    <form [formGroup]="RegisterForm" (ngSubmit)="submit()">
+        <div class="userName field">
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-user"></i>
+                </p-inputGroupAddon>
+                <input pInputText formControlName="name" placeholder="Username" />
+            </p-inputGroup>
+        </div>
+        <div class="valdation-msg">
+            @if (name.dirty || name.touched) {
+                @if (name.getError('required')){
+                    <div class="card">
+                        <p-messages 
+                            [value]="[{ severity: 'error', summary:'Error', detail: 'User Name Field is Required' }]" 
+                            [enableService]="false" 
+                            [closable]="false" />
+                    </div>
+                }
+                @if (name.getError('maxlength')){
+                    <div class="card">
+                        <p-messages 
+                            [value]="[{ severity: 'error', summary:'Error', detail: 'User Name very long' }]" 
+                            [enableService]="false" 
+                            [closable]="false" />
+                    </div>
+                }
+            }
+        </div>
+        <div class="email field">
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-envelope"></i>
+                </p-inputGroupAddon>
+                <input pInputText formControlName="email" placeholder="Email" />
+            </p-inputGroup>
+        </div>
+        <div class="password field">
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-key"></i>
+                </p-inputGroupAddon>
+                <input pInputText type="password" formControlName="password" placeholder="Password" />
+            </p-inputGroup>
+        </div>
+        <div class="rePassword field">
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-key"></i>
+                </p-inputGroupAddon>
+                <input pInputText type="password" formControlName="cfpassword" placeholder="Confirm Password" />
+            </p-inputGroup>
+        </div>
+        <p-button type="submit" label="Submit"/>
+    </form>
+</div>
