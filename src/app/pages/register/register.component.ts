@@ -6,11 +6,17 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { Message } from 'primeng/api';
 import { MessagesModule } from 'primeng/messages';
+import { IRegister } from '../../core/interfaces/iregister';
+import { AuthService } from '../../core/services/auth.service';
+import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast';
+import { RippleModule } from 'primeng/ripple';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [FormsModule, InputGroupModule, InputGroupAddonModule, InputTextModule,ReactiveFormsModule,ButtonModule,MessagesModule],
+  imports: [FormsModule, InputGroupModule, InputGroupAddonModule, InputTextModule,ReactiveFormsModule,ButtonModule,MessagesModule,ToastModule, RippleModule],
+  providers: [MessageService],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
 })
@@ -22,7 +28,7 @@ export class RegisterComponent  {
   cfpassword!:FormControl;
   RegisterForm!:FormGroup;
 
-  constructor() {
+  constructor(private _authService: AuthService, private _messageService: MessageService) {
     this.initFormControl();
     this.creatFormGroup();
   }
@@ -48,13 +54,37 @@ export class RegisterComponent  {
   }
   passwordMatch(pass: AbstractControl): ValidatorFn {
     return (repass: AbstractControl): null | {[key: string]: boolean} => {
-      if (pass.value !== repass.value) {
+      if (pass.value !== repass.value || repass.value === '') {
         return {passNotMatch: true}
       } else return null
     }
   }
+  
 
   submit() {
-    console.log(this.RegisterForm)
+    if(this.RegisterForm.valid){
+      // console.log(this.RegisterForm)
+      this.registerationApi(this.RegisterForm.value)
+    } else {
+      this.RegisterForm.markAsTouched();
+      Object.keys(this.RegisterForm.controls).forEach((c)=> this.RegisterForm.controls[c].markAsDirty());
+      this.show('error','Error','Message Content')
+    }
   }
+
+  registerationApi(data: IRegister) {    
+    this._authService.register(data).subscribe({
+      next:(response)=> {
+        if(response.id) {
+          this.show('success','Success','Message Content') 
+        }
+      },
+      error:(err) =>{this.show('error','Error',err.error.error) }
+    })
+  }
+
+  show(severity: string,summary : string, detail: string) {
+      this._messageService.add({ severity: severity, summary: summary, detail: detail });
+  }
+
 }
