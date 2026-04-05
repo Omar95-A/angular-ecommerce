@@ -4,3 +4,7 @@ export interface IRegister {
   password: string;
   cfpassword: string;
 }
+export interface Ilogin {
+  email: string;
+  password: string;
+}

@@ -1,1 +1,27 @@
-<p>login works!</p>
+<div class="container">
+    <h2>Login Form</h2>
+    <form [formGroup]="LoginForm" (ngSubmit)="submit()">
+
+        <div class="email field">
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-envelope"></i>
+                </p-inputGroupAddon>
+                <input pInputText formControlName="email" placeholder="Email" />
+            </p-inputGroup>
+        </div>
+        <div class="password field">
+            <p-inputGroup>
+                <p-inputGroupAddon>
+                    <i class="pi pi-key"></i>
+                </p-inputGroupAddon>
+                <input pInputText type="password" formControlName="password" placeholder="Password" />
+            </p-inputGroup>
+        </div>
+        <p-button type="submit" label="Login"/>
+    </form>
+</div>
+<div class="card flex justify-content-center">
+    <p-toast />
+</div>
+<ngx-spinner bdColor = "rgba(0,0,0,0.5)" size = "medium" color = "#fff" type = "ball-clip-rotate-multiple" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>

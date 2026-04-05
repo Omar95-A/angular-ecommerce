@@ -34,6 +34,7 @@
         <ng-template pTemplate="end" >
             <ng-container *ngFor="let item of items">
                 <a pRipple 
+                    routerLinkActive="ak-active"
                     [routerLink]="item?.['path']"
                     class="p-menuitem-link text-black p-2 p-link inline-flex justify-content-center align-items-center hover:bg-white-alpha-10 transition-all transition-duration-200">
                     <span [class]="item.icon"></span>
