@@ -94,6 +94,43 @@
       "email": "s@w",
       "password": "w",
       "id": "Ab077Vw0JxI"
+    },
+    {
+      "email": "d@s",
+      "password": "ss",
+      "id": "VvO383iUUn8"
+    },
+    {
+      "name": "f",
+      "email": "f@3",
+      "password": "3",
+      "cfpassword": "3",
+      "id": "Z0tP9VNeReo"
+    },
+    {
+      "email": "f@f",
+      "password": "f",
+      "id": "gDe0LWqiJvE"
+    },
+    {
+      "email": "w@w",
+      "password": "w",
+      "id": "rZ7cFUrjXI4"
+    },
+    {
+      "email": "d@d",
+      "password": "d",
+      "id": "H7dTNAtAzy0"
+    },
+    {
+      "email": "d@d",
+      "password": "d",
+      "id": "r2J1WT9c6ww"
+    },
+    {
+      "email": "f@d",
+      "password": "d",
+      "id": "OV0vt8LiGsk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

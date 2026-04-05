@@ -66,6 +66,7 @@ export class LoginComponent {
     this._authService.login(data).subscribe({
       next:(response)=> {
         if(response.id) {
+          sessionStorage.setItem('token',response.id);
           setTimeout(() => {
             /** spinner ends after 1 seconds */
             this.spinner.hide();
