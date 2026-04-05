@@ -11,11 +11,14 @@ import { AuthService } from '../../core/services/auth.service';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { RippleModule } from 'primeng/ripple';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { NgxSpinnerService } from "ngx-spinner";
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [FormsModule, InputGroupModule, InputGroupAddonModule, InputTextModule,ReactiveFormsModule,ButtonModule,MessagesModule,ToastModule, RippleModule],
+  imports: [FormsModule, InputGroupModule, InputGroupAddonModule, InputTextModule,ReactiveFormsModule,ButtonModule,MessagesModule,ToastModule, RippleModule,NgxSpinnerModule ],
   providers: [MessageService],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
@@ -28,7 +31,10 @@ export class RegisterComponent  {
   cfpassword!:FormControl;
   RegisterForm!:FormGroup;
 
-  constructor(private _authService: AuthService, private _messageService: MessageService) {
+  constructor(private _authService: AuthService, 
+    private _messageService: MessageService,
+    private spinner: NgxSpinnerService,
+    private _router: Router) {
     this.initFormControl();
     this.creatFormGroup();
   }
@@ -63,23 +69,35 @@ export class RegisterComponent  {
 
   submit() {
     if(this.RegisterForm.valid){
-      // console.log(this.RegisterForm)
-      this.registerationApi(this.RegisterForm.value)
+      this.registerationApi(this.RegisterForm.value); 
     } else {
       this.RegisterForm.markAsTouched();
       Object.keys(this.RegisterForm.controls).forEach((c)=> this.RegisterForm.controls[c].markAsDirty());
-      this.show('error','Error','Message Content')
     }
   }
 
-  registerationApi(data: IRegister) {    
+  registerationApi(data: IRegister) {  
+    this.spinner.show();        
     this._authService.register(data).subscribe({
       next:(response)=> {
         if(response.id) {
-          this.show('success','Success','Message Content') 
+          setTimeout(() => {
+            /** spinner ends after 1 seconds */
+            this.spinner.hide();
+            this.show('success','Success','Message Content');
+          }, 1000);
+          setTimeout(() => {
+            /** spinner ends after 2 seconds */
+            this._router.navigate(['login']);
+          }, 2000);
+          // this.show('success','Success','Message Content');
         }
+
+
       },
-      error:(err) =>{this.show('error','Error',err.error.error) }
+      error:(err) =>{this.show('error','Error',err.error.error);
+        this.spinner.hide();
+       }
     })
   }
 
