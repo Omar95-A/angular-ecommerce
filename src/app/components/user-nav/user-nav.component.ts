@@ -6,6 +6,7 @@ import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-user-nav',
   standalone: true,
@@ -20,57 +21,20 @@ export class UserNavComponent implements OnInit {
         this.items = [
             {
                 label: 'Home',
-                icon: 'pi pi-home'
+                icon: 'pi pi-home',
+                path: 'home'
             },
             {
-                label: 'Features',
-                icon: 'pi pi-star'
+                label: 'Products',
+                icon: 'pi pi-tags',
+                path: 'products'
             },
             {
-                label: 'Projects',
-                icon: 'pi pi-search',
-                items: [
-                    {
-                        label: 'Core',
-                        icon: 'pi pi-bolt',
-                        shortcut: '⌘+S'
-                    },
-                    {
-                        label: 'Blocks',
-                        icon: 'pi pi-server',
-                        shortcut: '⌘+B'
-                    },
-                    {
-                        label: 'UI Kit',
-                        icon: 'pi pi-pencil',
-                        shortcut: '⌘+U'
-                    },
-                    {
-                        separator: true
-                    },
-                    {
-                        label: 'Templates',
-                        icon: 'pi pi-palette',
-                        items: [
-                            {
-                                label: 'Apollo',
-                                icon: 'pi pi-palette',
-                                badge: '2'
-                            },
-                            {
-                                label: 'Ultima',
-                                icon: 'pi pi-palette',
-                                badge: '3'
-                            }
-                        ]
-                    }
-                ]
+                label: 'Category',
+                icon: 'pi pi-th-large',
+                path: 'category'
             },
-            {
-                label: 'Contact',
-                icon: 'pi pi-envelope',
-                badge: '3'
-            }
+
         ];
     }
 }

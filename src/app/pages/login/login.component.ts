@@ -74,7 +74,7 @@ export class LoginComponent {
           }, 1000);
           setTimeout(() => {
             /** spinner ends after 2 seconds */
-            this._router.navigate(['user']);
+            this._router.navigate(['home']);
           }, 2000);
           // this.show('success','Success','Message Content');
         }
