@@ -19,4 +19,9 @@ export class AuthService {
     return this._httpClient.post('http://localhost:3000/users',loginData);
   }
 
+  authorized(): boolean {
+      if(typeof window !== 'undefined' && sessionStorage.getItem('token') != null) {
+          return true;
+      } else return false
+  }
 }

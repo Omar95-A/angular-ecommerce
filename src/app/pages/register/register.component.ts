@@ -81,16 +81,20 @@ export class RegisterComponent  {
     this._authService.register(data).subscribe({
       next:(response)=> {
         if(response.id) {
-          setTimeout(() => {
-            /** spinner ends after 1 seconds */
-            this.spinner.hide();
-            this.show('success','Success','Message Content');
-          }, 1000);
-          setTimeout(() => {
-            /** spinner ends after 2 seconds */
-            this._router.navigate(['login']);
-          }, 2000);
+          const {email, password} = data;
+          this._authService.login({email, password}).subscribe((next) => {
+            sessionStorage.setItem('token',response.id);
+            setTimeout(() => {
+              /** spinner ends after 1 seconds */
+              this.spinner.hide();
+              this.show('success','Success','Message Content');
+            }, 1000);
+            setTimeout(() => {
+              /** spinner ends after 2 seconds */
+              this._router.navigate(['user']);
+            }, 2000);
           // this.show('success','Success','Message Content');
+          })
         }
 
 
