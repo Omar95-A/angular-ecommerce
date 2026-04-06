@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem, MessageService } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 import { BadgeModule } from 'primeng/badge';
 import { AvatarModule } from 'primeng/avatar';
@@ -7,15 +7,20 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
 import { RouterLink } from '@angular/router';
+import { ToastModule } from 'primeng/toast';
 @Component({
   selector: 'app-user-nav',
   standalone: true,
-  imports: [MenubarModule, BadgeModule, AvatarModule, InputTextModule, RippleModule, CommonModule],
+  imports: [MenubarModule, BadgeModule, AvatarModule, InputTextModule, RippleModule, CommonModule, ToastModule],
   templateUrl: './user-nav.component.html',
-  styleUrl: './user-nav.component.scss'
+  styleUrl: './user-nav.component.scss',
+  providers: [MessageService]
 })
 export class UserNavComponent implements OnInit {
     items: MenuItem[] | undefined;
+    items_user: MenuItem[] | undefined;
+
+    constructor(private messageService: MessageService) {}
 
     ngOnInit() {
         this.items = [
@@ -36,5 +41,23 @@ export class UserNavComponent implements OnInit {
             },
 
         ];
-    }
+        this.items_user = [
+            {
+                label: 'User',
+                icon: 'pi pi-user',
+                items: [
+                    {
+                        label: 'Profile',
+                        icon: 'pi pi-address-book',
+                    },
+                    {
+                        label: 'Logout',
+                        icon: 'pi pi-sign-out',
+                    }
+                ]
+            }
+
+        ];
+    };
+    
 }

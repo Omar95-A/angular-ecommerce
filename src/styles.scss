@@ -13,11 +13,29 @@ body {
     display:  block !important;
 }
 a {
+    padding: 5px;
+}
+a.ak-nav {
     color: black;
     margin-right: 10px;
+    padding: 17px 5px;
+}
+a.cart {
+    display: flex;
+    align-items: center;
+}
+.p-menubar-root-list>.p-menuitem-active>p-menubarsub>.p-submenu-list {
+    width: fit-content;
 }
 .ak-active {
     background-color: #e1e1dd;
+}
+.e-logo {
+    width: 50px;
+}
+
+.card-user {
+    padding: 5px;
 }
 .container {
     padding-left: 15px;
