@@ -24,4 +24,9 @@ export class AuthService {
           return true;
       } else return false
   }
+
+  logout(): Observable<any> {
+    return this._httpClient.post('http://localhost:3000/logout',{})
+  }
+
 }

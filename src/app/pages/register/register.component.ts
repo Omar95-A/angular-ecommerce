@@ -14,6 +14,7 @@ import { RippleModule } from 'primeng/ripple';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgxSpinnerService } from "ngx-spinner";
 import { Route, Router } from '@angular/router';
+import { UserDataService } from '../../core/services/user-data.service';
 
 @Component({
   selector: 'app-register',
@@ -34,7 +35,8 @@ export class RegisterComponent  {
   constructor(private _authService: AuthService, 
     private _messageService: MessageService,
     private spinner: NgxSpinnerService,
-    private _router: Router) {
+    private _router: Router,
+  private _userData: UserDataService) {
     this.initFormControl();
     this.creatFormGroup();
   }
@@ -84,6 +86,7 @@ export class RegisterComponent  {
           const {email, password} = data;
           this._authService.login({email, password}).subscribe((next) => {
             sessionStorage.setItem('token',response.id);
+            this._userData.userName.next(response.name);
             setTimeout(() => {
               /** spinner ends after 1 seconds */
               this.spinner.hide();

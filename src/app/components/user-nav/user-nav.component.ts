@@ -6,8 +6,10 @@ import { AvatarModule } from 'primeng/avatar';
 import { InputTextModule } from 'primeng/inputtext';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
-import { RouterLink } from '@angular/router';
+import { Route, Router, RouterLink } from '@angular/router';
 import { ToastModule } from 'primeng/toast';
+import { UserDataService } from '../../core/services/user-data.service';
+import { AuthService } from '../../core/services/auth.service';
 @Component({
   selector: 'app-user-nav',
   standalone: true,
@@ -19,10 +21,14 @@ import { ToastModule } from 'primeng/toast';
 export class UserNavComponent implements OnInit {
     items: MenuItem[] | undefined;
     items_user: MenuItem[] | undefined;
+    userName: string =''
+    cartNum: number = 0;
 
-    constructor(private messageService: MessageService) {}
+    constructor(private messageService: MessageService, private _userdata: UserDataService, private _authService: AuthService, private _router: Router) {}
 
     ngOnInit() {
+        this.getName();
+        this.getUserCountCart();
         this.items = [
             {
                 label: 'Home',
@@ -43,7 +49,7 @@ export class UserNavComponent implements OnInit {
         ];
         this.items_user = [
             {
-                label: 'User',
+                label: this.userName,
                 icon: 'pi pi-user',
                 items: [
                     {
@@ -53,6 +59,9 @@ export class UserNavComponent implements OnInit {
                     {
                         label: 'Logout',
                         icon: 'pi pi-sign-out',
+                        command: () => {
+                            this.logOut();
+                        }
                     }
                 ]
             }
@@ -60,4 +69,20 @@ export class UserNavComponent implements OnInit {
         ];
     };
     
+    getName() {
+        this._userdata.userName.subscribe((next) => {this.userName = next});
+    }
+
+    getUserCountCart() {
+        const id = sessionStorage.getItem('toke') || '';
+        this._userdata.getCountCart(id).subscribe((next) => this.cartNum = next.length);
+    }
+
+    logOut() {
+        this._authService.logout().subscribe((next)=> {
+            sessionStorage.removeItem('token');
+            this._router.navigate(['login']);
+        })
+
+    }
 }

@@ -14,6 +14,7 @@ import { RippleModule } from 'primeng/ripple';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgxSpinnerService } from "ngx-spinner";
 import { Route, Router } from '@angular/router';
+import { UserDataService } from '../../core/services/user-data.service';
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -31,7 +32,8 @@ export class LoginComponent {
   constructor(private _authService: AuthService, 
     private _messageService: MessageService,
     private spinner: NgxSpinnerService,
-    private _router: Router) {
+    private _router: Router,
+    private _userdata: UserDataService) {
     this.initFormControl();
     this.creatFormGroup();
   }
@@ -66,6 +68,7 @@ export class LoginComponent {
     this._authService.login(data).subscribe({
       next:(response)=> {
         if(response.id) {
+          this._userdata.userName.next(response.name);
           sessionStorage.setItem('token',response.id);
           setTimeout(() => {
             /** spinner ends after 1 seconds */

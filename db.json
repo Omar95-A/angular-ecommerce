@@ -1,313 +1,103 @@
 {
   "users": [
     {
-      "name": "aaa",
-      "email": "aaa@aaa",
-      "password": "aaa",
-      "cfpassword": "aaa",
-      "id": "s35mChEHte8"
-    },
-    {
-      "name": "s",
-      "email": "s@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "xHPdrmo9v10"
-    },
-    {
-      "name": "s",
-      "email": "s@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "63L5IbWosI8"
-    },
-    {
-      "name": "d",
-      "email": "d@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "c_JOYPaaSZE"
-    },
-    {
-      "name": "ww",
-      "email": "w@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "j4t3Q68edzI"
-    },
-    {
-      "name": "ww",
-      "email": "w@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "cwYJsyDmGCg"
-    },
-    {
-      "name": "ss",
-      "email": "ss@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "J24WbDRYMZ8"
-    },
-    {
-      "name": "d",
-      "email": "d@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "LqZS8_e5tR0"
-    },
-    {
-      "name": "omer",
-      "email": "omer@gmail.com",
-      "password": "asd",
-      "cfpassword": "asd",
-      "id": "J2rsWlbtAfk"
-    },
-    {
-      "email": "fff@ww",
-      "password": "123",
-      "id": "9_KrQHTZEts"
-    },
-    {
-      "email": "dd@w",
-      "password": "ww",
-      "id": "-4ia7yqQZUM"
-    },
-    {
-      "name": "d",
-      "email": "d@d",
-      "password": "d",
-      "cfpassword": "d",
-      "id": "jVEqD9G_WTo"
-    },
-    {
-      "email": "d@99",
-      "password": "d",
-      "id": "cgRG1P7rqGQ"
-    },
-    {
-      "email": "ss@w",
-      "password": "w",
-      "id": "xxETpXutLzA"
-    },
-    {
-      "email": "s@w",
-      "password": "w",
-      "id": "Ab077Vw0JxI"
-    },
-    {
-      "email": "d@s",
-      "password": "ss",
-      "id": "VvO383iUUn8"
-    },
-    {
-      "name": "f",
-      "email": "f@3",
-      "password": "3",
-      "cfpassword": "3",
-      "id": "Z0tP9VNeReo"
-    },
-    {
-      "email": "f@f",
-      "password": "f",
-      "id": "gDe0LWqiJvE"
-    },
-    {
-      "email": "w@w",
-      "password": "w",
-      "id": "rZ7cFUrjXI4"
-    },
-    {
-      "email": "d@d",
-      "password": "d",
-      "id": "H7dTNAtAzy0"
-    },
-    {
-      "email": "d@d",
-      "password": "d",
-      "id": "r2J1WT9c6ww"
-    },
-    {
-      "email": "f@d",
-      "password": "d",
-      "id": "OV0vt8LiGsk"
-    },
-    {
-      "name": "ss",
-      "email": "dd@d",
-      "password": "1",
-      "cfpassword": "1",
-      "id": "9DklvLpsgtA"
-    },
-    {
-      "email": "sad@s",
-      "password": "ss",
-      "id": "wALUd1KUAHg"
-    },
-    {
-      "name": "d",
-      "email": "d@d",
-      "password": "dd",
-      "cfpassword": "dd",
-      "id": "LhxKCbl9DzI"
-    },
-    {
-      "email": "d@d",
-      "password": "ddddd",
-      "id": "41xeYh1HJpE"
-    },
-    {
-      "email": "ff@s",
-      "password": "s",
-      "id": "Y5bZ0dF4cP0"
-    },
-    {
-      "name": "ss",
-      "email": "dd@ss",
-      "password": "s",
-      "cfpassword": "s",
-      "id": "YuBhMeF-s9U"
-    },
-    {
-      "name": "gg",
-      "email": "33@3",
-      "password": "d",
-      "cfpassword": "d",
-      "id": "YmE_HT5T3EU"
-    },
-    {
-      "email": "d@s",
-      "password": "s",
-      "id": "zsT8ge4p1Wg"
-    },
-    {
-      "email": "dd@s",
-      "password": "s",
-      "id": "cBo3iMKkfVU"
-    },
-    {
-      "name": "d",
-      "email": "w@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "AfqVj5tXw4k"
-    },
-    {
-      "email": "w@s",
-      "password": "s",
-      "id": "LZMmsneUIdM"
-    },
-    {
-      "name": "s",
-      "email": "s@s",
-      "password": "s",
-      "cfpassword": "s",
-      "id": "EZZp8FqfaaQ"
-    },
-    {
-      "email": "s@e",
+      "name": "Nur",
+      "email": "n@e",
       "password": "e",
-      "id": "EJqFOHDlalc"
+      "cfpassword": "e",
+      "id": "aDaRL8m5rW8"
     },
     {
-      "name": "d@w",
-      "email": "w@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "rzPHmZy57Ks"
+      "email": "n@e",
+      "password": "e",
+      "id": "Cf0yrpM2Z8o"
     },
     {
-      "email": "w@w",
-      "password": "w",
-      "id": "x3vIn4bz_e4"
+      "email": "e@e",
+      "password": "e",
+      "id": "vqoDQw4hYcA"
+    }
+  ],
+  "cart": [
+    {
+      "id": "168",
+      "title": "Charger SXT RWD",
+      "price": 32999.99,
+      "quantity": 3,
+      "total": 98999.97,
+      "discountPercentage": 13.39,
+      "discountedTotal": 85743.87,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
     },
     {
-      "email": "dd@s",
-      "password": "s",
-      "id": "jsgRgXAPXfo"
+      "id": "71",
+      "title": "Apple MacBook Pro 14 Inch Space Grey",
+      "price": 1999.99,
+      "quantity": 2,
+      "total": 3999.98,
+      "discountPercentage": 18.52,
+      "discountedTotal": 3259.18,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
     },
     {
-      "name": "d",
-      "email": "w@w",
-      "password": "w",
-      "cfpassword": "w",
-      "id": "ddHQHIS-BvM"
+      "id": "18",
+      "title": "Charger SXT RWD",
+      "price": 32999.99,
+      "quantity": 3,
+      "total": 98999.97,
+      "discountPercentage": 13.39,
+      "discountedTotal": 85743.87,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
     },
     {
-      "email": "w@w",
-      "password": "w",
-      "id": "8yc7qZIjics"
+      "id": "78",
+      "title": "Apple MacBook Pro 14 Inch Space Grey",
+      "price": 1999.99,
+      "quantity": 2,
+      "total": 3999.98,
+      "discountPercentage": 18.52,
+      "discountedTotal": 3259.18,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
     },
     {
-      "name": "s",
-      "email": "s@s",
-      "password": "s",
-      "cfpassword": "s",
-      "id": "wI7s4Dgd9w4"
+      "id": "118",
+      "title": "Charger SXT RWD",
+      "price": 32999.99,
+      "quantity": 3,
+      "total": 98999.97,
+      "discountPercentage": 13.39,
+      "discountedTotal": 85743.87,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
     },
     {
-      "email": "s@s",
-      "password": "s",
-      "id": "moIvx6_jBOg"
+      "id": "88",
+      "title": "Apple MacBook Pro 14 Inch Space Grey",
+      "price": 1999.99,
+      "quantity": 2,
+      "total": 3999.98,
+      "discountPercentage": 18.52,
+      "discountedTotal": 3259.18,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+    }
+  ],
+  "logout": [
+    {
+      "id": "VZP9ZcdITcI"
     },
     {
-      "email": "dds@w",
-      "password": "w",
-      "id": "gRvhPoilxDg"
+      "id": "fDviDlYLnAU"
     },
     {
-      "name": "s",
-      "email": "s@s",
-      "password": "s",
-      "cfpassword": "s",
-      "id": "_Sg8bvip2Ss"
+      "id": "84U9fuFDr1I"
     },
     {
-      "email": "s@s",
-      "password": "s",
-      "id": "Qh90ocnUTjU"
+      "id": "-E1wop9Ugoo"
     },
     {
-      "email": "dd@s",
-      "password": "s",
-      "id": "D7-WVZTstAg"
+      "id": "NYlr_GWhwFM"
     },
     {
-      "email": "ss@w",
-      "password": "w",
-      "id": "WkojHYqdLmg"
-    },
-    {
-      "email": "dd@sw",
-      "password": "w",
-      "id": "O1SQPbyljrY"
-    },
-    {
-      "email": "d@s",
-      "password": "s",
-      "id": "F5gSSjAYKAk"
-    },
-    {
-      "email": "g@d",
-      "password": "4",
-      "id": "EQcwqwavjTA"
-    },
-    {
-      "name": "dd",
-      "email": "d@s",
-      "password": "s",
-      "cfpassword": "s",
-      "id": "1GNJeC7S6n4"
-    },
-    {
-      "email": "d@s",
-      "password": "s",
-      "id": "w29ZKZyxWPE"
-    },
-    {
-      "email": "sss@sws",
-      "password": "s",
-      "id": "ro7F4Im-3rc"
+      "id": "_30js8qMyec"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -11,7 +11,7 @@
         </ng-template>
         <ng-template pTemplate="end">
             <div class="card flex justify-content-center">
-                <a class="cart p-2 "><i class="pi pi-shopping-cart text-2xl" pBadge value="2"></i></a>
+                <a class="cart p-2 "><i class="pi pi-shopping-cart text-2xl" pBadge [value]="cartNum"></i></a>
                 <div class="card card-user">
                     <p-menubar [model]="items_user" />
                 </div>
