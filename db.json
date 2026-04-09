@@ -16,6 +16,59 @@
       "email": "e@e",
       "password": "e",
       "id": "vqoDQw4hYcA"
+    },
+    {
+      "email": "dd@s",
+      "password": "aa",
+      "id": "b28_52PEZUU"
+    },
+    {
+      "name": "Ali",
+      "email": "a@a",
+      "password": "a",
+      "cfpassword": "a",
+      "id": "E4RjmcYHXs0"
+    },
+    {
+      "email": "a@a",
+      "password": "a",
+      "id": "_SqdiGvbIxM"
+    },
+    {
+      "name": "Omer",
+      "email": "a@a",
+      "password": "a",
+      "cfpassword": "a",
+      "id": "WEOKwtdaops"
+    },
+    {
+      "email": "a@a",
+      "password": "a",
+      "id": "Z2z-wkFGdmI"
+    },
+    {
+      "name": "Emre",
+      "email": "e@c",
+      "password": "c",
+      "cfpassword": "c",
+      "id": "807K1Vx1ors"
+    },
+    {
+      "email": "e@c",
+      "password": "c",
+      "id": "r1uHxxM1hPs"
+    },
+    {
+      "name": "dd",
+      "email": "a@s",
+      "password": "s",
+      "cfpassword": "s",
+      "id": "JFfZki0gkk8"
+    },
+    {
+      "email": "a@s",
+      "password": "s",
+      "id": "z-1oY5Oi-vE"
     }
   ],
   "cart": [
@@ -98,7 +151,72 @@
     },
     {
       "id": "_30js8qMyec"
+    },
+    {
+      "id": "s6gzeabGNFc"
+    },
+    {
+      "id": "80h0lmr4ga4"
+    },
+    {
+      "id": "1_FSbNBKudA"
     }
+  ],
+  "products": [
+            {
+                "prodImg": "bamboo-watch.jpg",
+                "prodTitle": "Bamboo Watch",
+                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
+                "prodOldPrice": 20,
+                "prodPrice": 17,
+                "prodDec": 15,
+                "prodAva": "off"
+            },
+            {
+                "prodImg": "blue-t-shirt.jpg",
+                "prodTitle": "Blue T-Shirt",
+                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+                "prodOldPrice": 10,
+                "prodPrice": 5,
+                "prodDec": 50,
+                "prodAva": "On"
+            },
+            {
+                "prodImg": "black-watch.jpg",
+                "prodTitle": "Black Watch",
+                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
+                "prodOldPrice": 20,
+                "prodPrice": 17,
+                "prodDec": 15,
+                "prodAva": "off"
+            },
+            {
+                "prodImg": "blue-band.jpg",
+                "prodTitle": "Blue Band",
+                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+                "prodOldPrice": 10,
+                "prodPrice": 5,
+                "prodDec": 50,
+                "prodAva": "On"
+            },
+            {
+                "prodImg": "bracelet.jpg",
+                "prodTitle": "Bracelet",
+                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
+                "prodOldPrice": 20,
+                "prodPrice": 17,
+                "prodDec": 15,
+                "prodAva": "off"
+            },
+            {
+                "prodImg": "gaming-set.jpg",
+                "prodTitle": "Gaming Set",
+                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+                "prodOldPrice": 10,
+                "prodPrice": 5,
+                "prodDec": 50,
+                "prodAva": "On"
+            }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

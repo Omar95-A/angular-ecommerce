@@ -1,8 +1,62 @@
 <div class="home">
     <div class="container">
-        <div class="grid">
-            <div class="gallery"></div>
-            <div class="popular-prod"></div>
+        <div class="grid align-items-center pt-2">
+            <div class="gallery col-6">
+                <div class="card">
+                    <p-galleria 
+                        [value]="images" 
+                        [numVisible]="2" 
+                        [circular]="true" 
+                        [showItemNavigators]="true" 
+                        [showThumbnails]="false" 
+                        [responsiveOptions]="responsiveOptions" 
+                        [containerStyle]="{ 'max-width': '640px' }">
+                            <ng-template pTemplate="item" let-item>
+                                <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
+                            </ng-template>
+                    </p-galleria>
+                </div>
+            </div>
+            <div class="popular-prod col-6">
+                <!-- <div class="product-list">
+                    <div class="product" *ngFor="let i of products | slice:0:4">
+                        <img [src]="'./assets/' + i.prodImg" [alt]="i.prodTitle">
+                        <div class="product-txt">
+                            <div class="prod-name">
+                                <span class="prod-n">{{i.prodTitle}}</span><br>
+                                <span class="prod-description">{{i.prodDescretion}}</span>
+                            </div>
+                            <div class="prod-data">
+                                <span class="old-price"><span>$</span>{{i.prodOldPrice}}</span>
+                                <span class="price"><span>$</span>{{i.prodPrice}}</span>
+                                <span class="desc">{{i.prodDec}}<span>%</span></span>
+                                <span class="available">{{i.prodAva}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <app-card [cardNum]="4"></app-card>
+            </div>
+        </div>
+        <div class="products mt-3">
+            <!-- <div class="product-list">
+                <div class="product" *ngFor="let i of products">
+                    <img [src]="'./assets/'+i.prodImg" [alt]="i.prodTitle">
+                    <div class="product-txt">
+                        <div class="prod-name">
+                            <span class="prod-n">{{i.prodTitle}}</span><br>
+                            <span class="prod-description">{{i.prodDescretion}}</span>
+                        </div>
+                        <div class="prod-data">
+                            <span class="old-price"><span>$</span>{{i.prodOldPrice}}</span>
+                            <span class="price"><span>$</span>{{i.prodPrice}}</span>
+                            <span class="desc">{{i.prodDec}}<span>%</span></span>
+                            <span class="available">{{i.prodAva}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <app-card [cardNum]="6"></app-card>
         </div>
     </div>
 </div>

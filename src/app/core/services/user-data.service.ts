@@ -13,4 +13,8 @@ export class UserDataService {
   getCountCart(id: string): Observable<any> {
     return this._httpClinet.get('http://localhost:3000/cart')
   }
+
+  getProducts(): Observable<any> {
+    return this._httpClinet.get('http://localhost:3000/products')
+  }
 }
