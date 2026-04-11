@@ -1,4 +1,5 @@
 export interface Products {
+  prodId: string;
   prodImg: string;
   prodTitle: string;
   prodDescretion: string;
@@ -6,4 +7,5 @@ export interface Products {
   prodPrice: number;
   prodDec: number;
   prodAva: string;
+  isAdded: boolean;
 }

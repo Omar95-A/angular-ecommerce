@@ -1,23 +1,30 @@
-            <div class="product-list">
-                @for (i of products | slice:0:cardNum; track $index) {
-                <div class="product">
-                    <img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/'+i.prodImg" 
-                        #iamge
-                        (error)="iamge.src='./assets/no-img-available.png'"
-                        [alt]="i.prodTitle">
-                    <div class="product-txt">
-                        <div class="prod-name">
-                            <span class="prod-n">{{i.prodTitle}}</span><br>
-                            <span class="prod-description">{{i.prodDescretion}}</span>
-                        </div>
-                        <div class="prod-data">
-                            <span class="old-price"><span>$</span>{{i.prodOldPrice}}</span>
-                            <span class="price"><span>$</span>{{i.prodPrice}}</span>
-                            <span class="desc">{{i.prodDec}}<span>%</span></span>
-                            <span class="available">{{i.prodAva}}</span>
-                        </div>
-                    </div>
-                </div>
-                }
-
+<div class="product-list">
+    @for (i of products | slice:0:productCount; track $index) {
+    <div class="product cursor-pointer"
+        >
+        <!-- [routerLink]="['/cart/i.id']"> -->
+        <img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/'+i.prodImg" 
+            #iamge
+            (error)="iamge.src='./assets/no-img-available.png'"
+            [alt]="i.prodTitle">
+        <div class="product-txt">
+            <div class="prod-name">
+                <span class="prod-n">{{i.prodTitle}}</span><br>
+                <span class="prod-description">{{i.prodDescretion}}</span>
             </div>
+            <div class="prod-data">
+                <span class="old-price"><span>$</span>{{i.prodOldPrice}}</span>
+                <span class="price"><span>$</span>{{i.prodPrice}}</span>
+                <span class="desc">{{i.prodDec}}<span>%</span></span>
+                <span class="available">{{i.prodAva}}</span>
+            </div>
+            @if (!i.isAdded){
+                <p-button (click)="addToCart(i.prodId);i.isAdded= true" label="ADD TO CART" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
+            }
+            @if (i.isAdded) {
+                <p-button [routerLink]="['/cart']" label="Go TO CART" severity="help" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
+            }
+        </div>
+    </div>
+    }
+</div>

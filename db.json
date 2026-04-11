@@ -8,129 +8,53 @@
       "id": "aDaRL8m5rW8"
     },
     {
-      "email": "n@e",
-      "password": "e",
-      "id": "Cf0yrpM2Z8o"
+      "name": "Ahmed",
+      "email": "a@a",
+      "password": "a",
+      "cfpassword": "a",
+      "id": "F6eWrVIRN7g"
     },
     {
-      "email": "e@e",
-      "password": "e",
-      "id": "vqoDQw4hYcA"
+      "email": "a@a",
+      "password": "a",
+      "id": "u6ZQxgU2mF8"
     },
     {
       "email": "dd@s",
-      "password": "aa",
-      "id": "b28_52PEZUU"
-    },
-    {
-      "name": "Ali",
-      "email": "a@a",
-      "password": "a",
-      "cfpassword": "a",
-      "id": "E4RjmcYHXs0"
-    },
-    {
-      "email": "a@a",
-      "password": "a",
-      "id": "_SqdiGvbIxM"
-    },
-    {
-      "name": "Omer",
-      "email": "a@a",
-      "password": "a",
-      "cfpassword": "a",
-      "id": "WEOKwtdaops"
-    },
-    {
-      "email": "a@a",
-      "password": "a",
-      "id": "Z2z-wkFGdmI"
-    },
-    {
-      "name": "Emre",
-      "email": "e@c",
-      "password": "c",
-      "cfpassword": "c",
-      "id": "807K1Vx1ors"
-    },
-    {
-      "email": "e@c",
-      "password": "c",
-      "id": "r1uHxxM1hPs"
-    },
-    {
-      "name": "dd",
-      "email": "a@s",
       "password": "s",
-      "cfpassword": "s",
-      "id": "JFfZki0gkk8"
-    },
-    {
-      "email": "a@s",
-      "password": "s",
-      "id": "z-1oY5Oi-vE"
+      "id": "CnBl9TfU4C8"
     }
   ],
   "cart": [
     {
-      "id": "168",
-      "title": "Charger SXT RWD",
-      "price": 32999.99,
-      "quantity": 3,
-      "total": 98999.97,
-      "discountPercentage": 13.39,
-      "discountedTotal": 85743.87,
-      "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+      "userId": "F6eWrVIRN7g",
+      "productId": "1",
+      "id": "VycpZ1DOCuc"
     },
     {
-      "id": "71",
-      "title": "Apple MacBook Pro 14 Inch Space Grey",
-      "price": 1999.99,
-      "quantity": 2,
-      "total": 3999.98,
-      "discountPercentage": 18.52,
-      "discountedTotal": 3259.18,
-      "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+      "userId": "F6eWrVIRN7g",
+      "productId": "6",
+      "id": "8TZ7i9Z2at8"
     },
     {
-      "id": "18",
-      "title": "Charger SXT RWD",
-      "price": 32999.99,
-      "quantity": 3,
-      "total": 98999.97,
-      "discountPercentage": 13.39,
-      "discountedTotal": 85743.87,
-      "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+      "userId": "F6eWrVIRN7g",
+      "productId": "5",
+      "id": "09Wc3zpAIMs"
     },
     {
-      "id": "78",
-      "title": "Apple MacBook Pro 14 Inch Space Grey",
-      "price": 1999.99,
-      "quantity": 2,
-      "total": 3999.98,
-      "discountPercentage": 18.52,
-      "discountedTotal": 3259.18,
-      "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+      "userId": "CnBl9TfU4C8",
+      "productId": "2",
+      "id": "Ezq5TyuvZuc"
     },
     {
-      "id": "118",
-      "title": "Charger SXT RWD",
-      "price": 32999.99,
-      "quantity": 3,
-      "total": 98999.97,
-      "discountPercentage": 13.39,
-      "discountedTotal": 85743.87,
-      "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+      "userId": "CnBl9TfU4C8",
+      "productId": "1",
+      "id": "m1n7KOipPYY"
     },
     {
-      "id": "88",
-      "title": "Apple MacBook Pro 14 Inch Space Grey",
-      "price": 1999.99,
-      "quantity": 2,
-      "total": 3999.98,
-      "discountPercentage": 18.52,
-      "discountedTotal": 3259.18,
-      "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+      "userId": "CnBl9TfU4C8",
+      "productId": "2",
+      "id": "3XbMVFZAq64"
     }
   ],
   "logout": [
@@ -138,85 +62,82 @@
       "id": "VZP9ZcdITcI"
     },
     {
-      "id": "fDviDlYLnAU"
-    },
-    {
-      "id": "84U9fuFDr1I"
-    },
-    {
-      "id": "-E1wop9Ugoo"
-    },
-    {
-      "id": "NYlr_GWhwFM"
-    },
-    {
-      "id": "_30js8qMyec"
-    },
-    {
-      "id": "s6gzeabGNFc"
-    },
-    {
-      "id": "80h0lmr4ga4"
-    },
-    {
-      "id": "1_FSbNBKudA"
+      "id": "tccePc8Lb6U"
     }
   ],
   "products": [
-            {
-                "prodImg": "bamboo-watch.jpg",
-                "prodTitle": "Bamboo Watch",
-                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
-                "prodOldPrice": 20,
-                "prodPrice": 17,
-                "prodDec": 15,
-                "prodAva": "off"
-            },
-            {
-                "prodImg": "blue-t-shirt.jpg",
-                "prodTitle": "Blue T-Shirt",
-                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
-                "prodOldPrice": 10,
-                "prodPrice": 5,
-                "prodDec": 50,
-                "prodAva": "On"
-            },
-            {
-                "prodImg": "black-watch.jpg",
-                "prodTitle": "Black Watch",
-                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
-                "prodOldPrice": 20,
-                "prodPrice": 17,
-                "prodDec": 15,
-                "prodAva": "off"
-            },
-            {
-                "prodImg": "blue-band.jpg",
-                "prodTitle": "Blue Band",
-                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
-                "prodOldPrice": 10,
-                "prodPrice": 5,
-                "prodDec": 50,
-                "prodAva": "On"
-            },
-            {
-                "prodImg": "bracelet.jpg",
-                "prodTitle": "Bracelet",
-                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
-                "prodOldPrice": 20,
-                "prodPrice": 17,
-                "prodDec": 15,
-                "prodAva": "off"
-            },
-            {
-                "prodImg": "gaming-set.jpg",
-                "prodTitle": "Gaming Set",
-                "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
-                "prodOldPrice": 10,
-                "prodPrice": 5,
-                "prodDec": 50,
-                "prodAva": "On"
-            }
+    {
+      "prodId": "1",
+      "prodImg": "bamboo-watch.jpg",
+      "prodTitle": "Bamboo Watch",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
+      "prodOldPrice": 20,
+      "prodPrice": 17,
+      "prodDec": 15,
+      "prodAva": "off",
+      "isAdded": false,
+      "id": "iSR1SqhjRi0"
+    },
+    {
+      "prodId": "2",
+      "prodImg": "blue-t-shirt.jpg",
+      "prodTitle": "Blue T-Shirt",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+      "prodOldPrice": 10,
+      "prodPrice": 5,
+      "prodDec": 50,
+      "prodAva": "On",
+      "isAdded": false,
+      "id": "7Lp3Bu_OJ-s"
+    },
+    {
+      "prodId": "3",
+      "prodImg": "black-watch.jpg",
+      "prodTitle": "Black Watch",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
+      "prodOldPrice": 20,
+      "prodPrice": 17,
+      "prodDec": 15,
+      "prodAva": "off",
+      "isAdded": false,
+      "id": "AiObYGwtQHI"
+    },
+    {
+      "prodId": "4",
+      "prodImg": "blue-band.jpg",
+      "prodTitle": "Blue Band",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+      "prodOldPrice": 10,
+      "prodPrice": 5,
+      "prodDec": 50,
+      "prodAva": "On",
+      "isAdded": false,
+      "id": "WbQtCRzgAUg"
+    },
+    {
+      "prodId": "5",
+      "prodImg": "bracelet.jpg",
+      "prodTitle": "Bracelet",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
+      "prodOldPrice": 20,
+      "prodPrice": 17,
+      "prodDec": 15,
+      "prodAva": "off",
+      "isAdded": false,
+      "id": "X7urkVVqSsU"
+    },
+    {
+      "prodId": "6",
+      "prodImg": "gaming-set.jpg",
+      "prodTitle": "Gaming Set",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+      "prodOldPrice": 10,
+      "prodPrice": 5,
+      "prodDec": 50,
+      "prodAva": "On",
+      "isAdded": false,
+      "id": "VSlF3bHcYuU"
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
