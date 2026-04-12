@@ -4,6 +4,7 @@ import { SlicePipe } from '@angular/common';
 import { UserDataService } from '../../../core/services/user-data.service';
 import { ButtonModule } from 'primeng/button';
 import { RouterLink } from '@angular/router';
+import { NotificationsService } from '../../../core/services/notifications.service';
 
 @Component({
   selector: 'app-card',
@@ -21,7 +22,7 @@ export class CardComponent {
     products: Array<Products> | undefined;
 
 
-    constructor(private _userDataService: UserDataService) {}
+    constructor(private _userDataService: UserDataService,private _notificationsService:NotificationsService) {}
 
     ngOnInit() {
       this.getProducts()
@@ -100,6 +101,7 @@ export class CardComponent {
       const userId = sessionStorage.getItem('token') || '';
       this._userDataService.addToCart({userId,productId}).subscribe((next) => {
 
+        this._notificationsService.showSuccess('Success','The product has been added to the shopping cart.')
         // console.log(this._userDataService.cartItemCount);
         const storeCart = localStorage.getItem('cartItem');
         const cartItem = storeCart ? JSON.parse(storeCart) : {};
