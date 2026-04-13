@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 </div> -->
-                <app-card [productCount]="4"></app-card>
+                <app-card [productCount]="homeProducts | newProducts"></app-card>
             </div>
         </div>
         <div class="products mt-3">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div> -->
-            <app-card [productCount]="6"></app-card>
+            <app-card [productCount]="homeProducts | popularProductsPipe" ></app-card>
         </div>
     </div>
 </div>

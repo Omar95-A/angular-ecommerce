@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { baseUrl } from '../apiRoot/baseUrl';
+import { apiUrl } from '../apiRoot/baseUrl';
 import { Ilogin, IRegister } from '../interfaces/iregister';
 
 @Injectable({
@@ -12,11 +12,11 @@ export class AuthService {
   constructor(private _httpClient: HttpClient) { }
 
   register(registerData: IRegister): Observable<any> {
-    return this._httpClient.post('http://localhost:3000/users',registerData);
+    return this._httpClient.post(`${apiUrl}/users`,registerData);
   }
 
   login(loginData: Ilogin): Observable<any> {
-    return this._httpClient.post('http://localhost:3000/users',loginData);
+    return this._httpClient.post(`${apiUrl}/users`,loginData);
   }
 
   authorized(): boolean {
@@ -26,7 +26,7 @@ export class AuthService {
   }
 
   logout(): Observable<any> {
-    return this._httpClient.post('http://localhost:3000/logout',{})
+    return this._httpClient.post(`${apiUrl}/logout`,{})
   }
 
 }

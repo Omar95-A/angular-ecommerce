@@ -7,5 +7,7 @@ export interface Products {
   prodPrice: number;
   prodDec: number;
   prodAva: string;
+  isPopular: boolean;
   isAdded: boolean;
+  isNew: boolean;
 }

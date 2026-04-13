@@ -1,1 +1,13 @@
-<p>products works!</p>
+<div class="productsPage">
+    <div class="container">
+        <h2>All Products</h2>
+        <p-iconField iconPosition="left">
+            <p-inputIcon styleClass="pi pi-search" />
+            <input type="text" pInputText placeholder="Search for products" [(ngModel)]="productName"/>
+        </p-iconField>
+
+        <div class="products mt-3">
+            <app-card [productCount]="myAllProducts | searchProduct:productName"></app-card>
+        </div>
+    </div>
+</div>

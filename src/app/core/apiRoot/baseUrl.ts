@@ -1,1 +1,1 @@
-export const baseUrl = 'https://e-commerce-serverside.vercel.app';
+export const apiUrl = 'http://localhost:3000';

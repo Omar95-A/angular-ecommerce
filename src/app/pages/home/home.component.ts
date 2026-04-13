@@ -4,12 +4,13 @@ import { CommonModule, SlicePipe } from '@angular/common';
 import { Products } from '../../core/interfaces/Products'
 import { CardComponent } from '../../components/shared/card/card.component';
 import { UserDataService } from '../../core/services/user-data.service';
-
+import { PopularProductsPipe } from '../../core/pipes/popular-products.pipe';
+import { NewProductsPipe } from '../../core/pipes/new-products.pipe';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [GalleriaModule, CommonModule,SlicePipe, CardComponent],
+  imports: [GalleriaModule, CommonModule, SlicePipe, CardComponent ,PopularProductsPipe, NewProductsPipe],
   providers: [],
   encapsulation: ViewEncapsulation.None,
   templateUrl: './home.component.html',
@@ -18,8 +19,7 @@ import { UserDataService } from '../../core/services/user-data.service';
 export class HomeComponent {
 
     images: any[] | undefined;
-
-    myproducts!: Products[];
+    homeProducts: Products[]=[];
 
     constructor(private _userDataService: UserDataService) {}
 
@@ -111,12 +111,15 @@ export class HomeComponent {
         //         prodAva: 'On',
         //     },
         // ];
-
     }
 
 
     getProducts() {
-        this._userDataService.getProducts().subscribe((next) => {this.myproducts= next});
+        const storeCart = localStorage.getItem('cartItem');
+        const cartItem = storeCart ? JSON.parse(storeCart) : {};
+        this._userDataService.getProducts().subscribe((response: Products[]) => {
+          this.homeProducts= response.map((prod)=>{return {...prod,isAdded: cartItem[prod.prodId] || false}});
+        });
     }
 
 }
