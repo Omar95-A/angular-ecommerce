@@ -7,7 +7,9 @@
         </p-iconField>
 
         <div class="products mt-3">
-            <app-card [productCount]="myAllProducts | searchProduct:productName"></app-card>
+            @defer(on idle) {
+                <app-card [productSearch]="productName" [productCount]="myAllProducts | searchProduct:productName"></app-card>
+            }
         </div>
     </div>
 </div>

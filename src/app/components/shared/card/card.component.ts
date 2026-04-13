@@ -18,6 +18,7 @@ import { SearchProductPipe } from '../../../core/pipes/search-product.pipe';
 export class CardComponent {
 
     @Input({required: true}) productCount!: Products[];
+    @Input() productSearch: string ='';
     cartItemCountFromCard: number = 0;
 
     constructor(private _userDataService: UserDataService,private _notificationsService:NotificationsService) {}
