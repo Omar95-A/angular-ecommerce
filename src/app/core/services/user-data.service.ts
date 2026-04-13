@@ -26,4 +26,18 @@ export class UserDataService {
     return this._httpClinet.get(`${apiUrl}/products`)
   }
 
+  getCategoryProducts(): Observable<any> {
+    return this._httpClinet.get(`${apiUrl}/products`)
+    
+  }
+
+  // getSpecifecCategoryProducts(typeCate: string): Observable<any> {
+  //   return this._httpClinet.get(`${apiUrl}/products`,{params: {type:typeCate}})
+  // }
+
+  getSpecifecCategoryProducts(e: string): Observable<any> {
+    // return this._httpClinet.get(`${apiUrl}/products?prodCategory=watch`)
+    return this._httpClinet.get(`${apiUrl}/products`,{params: {prodCategory:e}})
+  }
+
 }

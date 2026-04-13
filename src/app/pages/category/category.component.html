@@ -1,1 +1,20 @@
-<p>category works!</p>
+<div class="container">
+    <h2>Category</h2>
+    <div class="category-list">
+        @for (c of myUniqueTypes; track $index) {
+        <div class="product cursor-pointer"
+            [routerLink]="['/specificCategory',c]">
+            <img [src]="'./assets/Category '+c+'.jpg'" 
+                #iamge
+
+                alt="i">
+            <div class="product-txt">
+                <div class="prod-name">
+                    <span class="prod-n">{{c}}</span><br>
+                    <span class="prod-description">All products are in the {{c}} category.</span>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>

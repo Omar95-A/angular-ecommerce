@@ -1,0 +1,37 @@
+<div class="products">
+    <div class="container">
+        <h2>All products are in the {{'watch'}} category.</h2>
+        <div class="product-list">
+            @for (i of cateProduct; track $index) {
+            <div class="product cursor-pointer"
+                >
+                <!-- [routerLink]="['/cart/']"> -->
+                <img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/'+i.prodImg" 
+                    #iamge
+                    (error)="iamge.src='./assets/no-img-available.png'"
+                    [alt]="i.prodTitle">
+                <div class="product-txt">
+                    <div class="prod-name">
+                        <span class="prod-n">{{i.prodTitle}}</span><br>
+                        <span class="prod-description">{{i.prodDescretion}}</span>
+                    </div>
+                    <div class="prod-data">
+                        <span class="old-price"><span>$</span>{{i.prodOldPrice}}</span>
+                        <span class="price"><span>$</span>{{i.prodPrice}}</span>
+                        <span class="desc">{{i.prodDec}}<span>%</span></span>
+                        <span class="available">{{i.prodAva}}</span>
+                    </div>
+                    <!-- @if (!i.isAdded){
+                        <p-button (click)="addToCart(i.prodId);i.isAdded= true" label="ADD TO CART" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
+                    }
+                    @if (i.isAdded) {
+                        <p-button [routerLink]="['/cart']" label="Go TO CART" severity="help" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
+                    } -->
+                </div>
+            </div>
+            }@empty {
+                <h2 class="noProducts">Sorry, product <span>{{'watch'}}</span> is not available in our product list.</h2>
+            }
+        </div>
+    </div>
+</div>

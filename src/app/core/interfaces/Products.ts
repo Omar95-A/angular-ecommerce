@@ -6,6 +6,7 @@ export interface Products {
   prodOldPrice: number;
   prodPrice: number;
   prodDec: number;
+  prodCategory: string;
   prodAva: string;
   isPopular: boolean;
   isAdded: boolean;
