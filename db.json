@@ -71,68 +71,45 @@
       "email": "uu@s",
       "password": "s",
       "id": "QWRgG6tAcZg"
+    },
+    {
+      "email": "ff@dd",
+      "password": "d",
+      "id": "2zwD19tQFFk"
+    },
+    {
+      "name": "Omer",
+      "email": "o@a",
+      "password": "a",
+      "cfpassword": "a",
+      "id": "Gsw8Q6JuIW4"
+    },
+    {
+      "email": "o@a",
+      "password": "a",
+      "id": "dF6oqmFI8zo"
+    },
+    {
+      "email": "dd@d",
+      "password": "d",
+      "id": "ZDDfjLB2Eug"
     }
   ],
   "cart": [
     {
-      "userId": "DRoIEEMpnxQ",
-      "productId": "2",
-      "id": "D_HgSSzzFuo"
+      "userId": "Gsw8Q6JuIW4",
+      "productId": "1006",
+      "id": "s080TIBtAs8"
     },
     {
-      "userId": "DRoIEEMpnxQ",
-      "productId": "1",
-      "id": "KZdYrT1BzrA"
+      "userId": "Gsw8Q6JuIW4",
+      "productId": "1003",
+      "id": "YFpaezMqSvY"
     },
     {
-      "userId": "V_Fu1WIHZZ8",
-      "productId": "6",
-      "id": "9udfLT6ORac"
-    },
-    {
-      "userId": "vhTZkj_diJs",
-      "productId": "5",
-      "id": "9xb6VhwsoMU"
-    },
-    {
-      "userId": "uwU89MpSB9o",
-      "productId": "4",
-      "id": "BkDWwFrptQE"
-    },
-    {
-      "userId": "wdtwnVSQXZ8",
-      "productId": "2",
-      "id": "23F-GDF07w0"
-    },
-    {
-      "userId": "b2mPmpII-Jo",
-      "productId": "1",
-      "id": "PeLo_145iLM"
-    },
-    {
-      "userId": "E7wz8oqpIFM",
-      "productId": "2",
-      "id": "KezJJHPft5k"
-    },
-    {
-      "userId": "E7wz8oqpIFM",
-      "productId": "3",
-      "id": "Y_V0fr8ho-o"
-    },
-    {
-      "userId": "QWRgG6tAcZg",
-      "productId": "1",
-      "id": "D-sx2iqQI8E"
-    },
-    {
-      "userId": "QWRgG6tAcZg",
-      "productId": "4",
-      "id": "Kw1QIuKpvKY"
-    },
-    {
-      "userId": "QWRgG6tAcZg",
-      "productId": "8",
-      "id": "jkpBV7us2Gk"
+      "userId": "Gsw8Q6JuIW4",
+      "productId": "1004",
+      "id": "0VbsdhbFUbI"
     }
   ],
   "logout": [
@@ -144,11 +121,14 @@
     },
     {
       "id": "D8toO082n0s"
+    },
+    {
+      "id": "7TBOCbBKyyA"
     }
   ],
   "products": [
     {
-      "prodId": "1",
+      "prodId": "1001",
       "prodImg": "bamboo-watch.jpg",
       "prodTitle": "Bamboo Watch",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
@@ -158,10 +138,11 @@
       "prodCategory": "watch",
       "prodAva": "off",
       "isAdded": false,
-      "id": "iSR1SqhjRi0"
+      "_id": "iSR1SqhjRi0",
+      "id": "hm9tkleHytg"
     },
     {
-      "prodId": "2",
+      "prodId": "1002",
       "prodImg": "blue-t-shirt.jpg",
       "prodTitle": "Blue T-Shirt",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
@@ -170,12 +151,13 @@
       "prodDec": 50,
       "prodCategory": "clothes",
       "prodAva": "On",
-      "isAdded": false,
       "isPopular": true,
-      "id": "7Lp3Bu_OJ-s"
+      "isAdded": false,
+      "_id": "7Lp3Bu_OJ-s",
+      "id": "M1ryjALX928"
     },
     {
-      "prodId": "3",
+      "prodId": "1003",
       "prodImg": "black-watch.jpg",
       "prodTitle": "Black Watch",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
@@ -184,12 +166,13 @@
       "prodDec": 15,
       "prodCategory": "watch",
       "prodAva": "off",
-      "isAdded": false,
       "isPopular": true,
-      "id": "AiObYGwtQHI"
+      "isAdded": false,
+      "_id": "AiObYGwtQHI",
+      "id": "WgkIcxK3V0Y"
     },
     {
-      "prodId": "4",
+      "prodId": "1004",
       "prodImg": "blue-band.jpg",
       "prodTitle": "Blue Band",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
@@ -199,10 +182,11 @@
       "prodCategory": "electronic",
       "prodAva": "On",
       "isAdded": false,
-      "id": "WbQtCRzgAUg"
+      "_id": "WbQtCRzgAUg",
+      "id": "YFiD_ATjAsQ"
     },
     {
-      "prodId": "5",
+      "prodId": "1005",
       "prodImg": "bracelet.jpg",
       "prodTitle": "Bracelet",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum,",
@@ -211,12 +195,13 @@
       "prodDec": 15,
       "prodCategory": "accessory",
       "prodAva": "off",
-      "isAdded": false,
       "isPopular": true,
-      "id": "X7urkVVqSsU"
+      "isAdded": false,
+      "_id": "X7urkVVqSsU",
+      "id": "98r4mXzNPAQ"
     },
     {
-      "prodId": "6",
+      "prodId": "1006",
       "prodImg": "gaming-set.jpg",
       "prodTitle": "Gaming Set",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
@@ -226,36 +211,39 @@
       "prodCategory": "electronic",
       "prodAva": "On",
       "isAdded": false,
-      "id": "VSlF3bHcYuU"
+      "_id": "VSlF3bHcYmU",
+      "id": "PV7AuzsF0aM"
     },
     {
-      "prodId": "7",
-      "prodImg": "gaming-set.jpg",
-      "prodTitle": "Gaming Set",
+      "prodId": "1007",
+      "prodImg": "shoes.jpg",
+      "prodTitle": "Shoes",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
-      "prodOldPrice": 10,
-      "prodPrice": 5,
+      "prodOldPrice": 60,
+      "prodPrice": 45,
+      "prodDec": 25,
+      "prodCategory": "clothes",
+      "prodAva": "off",
+      "isAdded": false,
+      "_id": "VSlF3bHcYuD",
+      "id": "4aAhckxSTHU"
+    },
+    {
+      "prodId": "1008",
+      "prodImg": "yellow-earbuds.jpg",
+      "prodTitle": "Yellow Earbuds",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+      "prodOldPrice": 90,
+      "prodPrice": 45,
       "prodDec": 50,
       "prodCategory": "electronic",
-      "prodAva": "On",
+      "prodAva": "off",
       "isAdded": false,
-      "id": "VSlF3bHcYuU"
+      "_id": "VSlF3bHcYuk",
+      "id": "SJdDumiPYr4"
     },
     {
-      "prodId": "8",
-      "prodImg": "gaming-set.jpg",
-      "prodTitle": "Gaming Set",
-      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
-      "prodOldPrice": 10,
-      "prodPrice": 5,
-      "prodDec": 50,
-      "prodCategory": "electronic",
-      "prodAva": "On",
-      "isAdded": false,
-      "id": "VSlF3bHcYuU"
-    },
-    {
-      "prodId": "9",
+      "prodId": "1009",
       "prodImg": "lime-band.jpg",
       "prodTitle": "Lime Band",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
@@ -264,12 +252,13 @@
       "prodDec": 50,
       "prodCategory": "electronic",
       "prodAva": "On",
-      "isAdded": false,
       "isNew": true,
-      "id": "VSlF3bHcYuU"
+      "isAdded": false,
+      "_id": "VSlF3bHcYfU",
+      "id": "AwDiy4jNklY"
     },
     {
-      "prodId": "10",
+      "prodId": "1010",
       "prodImg": "mini-speakers.jpg",
       "prodTitle": "Mini Speakers",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
@@ -278,9 +267,40 @@
       "prodDec": 50,
       "prodCategory": "electronic",
       "prodAva": "On",
+      "isNew": false,
       "isAdded": false,
+      "_id": "VSlF3bHcYuL",
+      "id": "4sGATj2UEWU"
+    },
+    {
+      "prodId": "1011",
+      "prodImg": "chakra-bracelet.jpg",
+      "prodTitle": "Chakra Bracelet",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+      "prodOldPrice": 30,
+      "prodPrice": 27,
+      "prodDec": 10,
+      "prodCategory": "accessory",
+      "prodAva": "off",
+      "isNew": false,
+      "isAdded": false,
+      "_id": "VSlF3bHcYuA",
+      "id": "T8STIHU4odM"
+    },
+    {
+      "prodId": "1012",
+      "prodImg": "galaxy-earrings.jpg",
+      "prodTitle": "Galaxy Earrings",
+      "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
+      "prodOldPrice": 40,
+      "prodPrice": 36,
+      "prodDec": 10,
+      "prodCategory": "accessory",
+      "prodAva": "on",
       "isNew": true,
-      "id": "VSlF3bHcYuU"
+      "isAdded": false,
+      "_id": "VSlF3bHcYuN",
+      "id": "epyuuR8dCn4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,8 +1,7 @@
 <div class="product-list">
     @for (i of productCount; track $index) {
     <div class="product cursor-pointer"
-        >
-        <!-- [routerLink]="['/cart/i.id']"> -->
+        [routerLink]="['/details',i._id]">
         <img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/'+i.prodImg" 
             #iamge
             (error)="iamge.src='./assets/no-img-available.png'"

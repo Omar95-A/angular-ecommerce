@@ -1,1 +1,25 @@
-<p>details works!</p>
+<div class="container">
+    <div class="product-details">
+
+            <img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/'+product.prodImg" >
+    
+        <div class="product-txt">
+            <div class="prod-name">
+                <span class="prod-n">{{product.prodTitle}}</span><br>
+                <span class="prod-description">{{product.prodDescretion}}</span>
+            </div>
+            <div class="prod-data">
+                <span class="old-price"><span>$</span>{{product.prodOldPrice}}</span>
+                <span class="price"><span>$</span>{{product.prodPrice}}</span>
+                <span class="desc">{{product.prodDec}}<span>%</span></span>
+                <span class="available">{{product.prodAva}}</span>
+            </div>
+            <!-- @if (!product.isAdded){
+                <p-button (click)="addToCart(product.prodId);product.isAdded= true" label="ADD TO CART" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
+            }
+            @if (product.isAdded) {
+                <p-button [routerLink]="['/cart']" label="Go TO CART" severity="help" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
+            } -->
+        </div>
+    </div>
+</div>
