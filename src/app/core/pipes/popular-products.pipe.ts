@@ -3,7 +3,7 @@ import { Products } from '../interfaces/Products';
 
 @Pipe({
   name: 'popularProductsPipe',
-  standalone: true
+  standalone: true,
 })
 export class PopularProductsPipe implements PipeTransform {
 

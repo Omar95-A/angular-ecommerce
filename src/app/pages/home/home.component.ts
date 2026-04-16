@@ -6,6 +6,8 @@ import { CardComponent } from '../../components/shared/card/card.component';
 import { UserDataService } from '../../core/services/user-data.service';
 import { PopularProductsPipe } from '../../core/pipes/popular-products.pipe';
 import { NewProductsPipe } from '../../core/pipes/new-products.pipe';
+import { ProductDataService } from '../../core/services/product-data.service';
+
 
 @Component({
   selector: 'app-home',
@@ -21,7 +23,8 @@ export class HomeComponent {
     images: any[] | undefined;
     homeProducts: Products[]=[];
 
-    constructor(private _userDataService: UserDataService) {}
+
+    constructor(private _userDataService: UserDataService, private _productDataService: ProductDataService) {}
 
     responsiveOptions: any[] = [
         {
@@ -38,7 +41,6 @@ export class HomeComponent {
         }
     ];
 
-    
     ngOnInit() {
         this.getProducts();
         this.images = [  
@@ -113,12 +115,12 @@ export class HomeComponent {
         // ];
     }
 
-
     getProducts() {
         const storeCart = localStorage.getItem('cartItem');
         const cartItem = storeCart ? JSON.parse(storeCart) : {};
-        this._userDataService.getProducts().subscribe((response: Products[]) => {
-          this.homeProducts= response.map((prod)=>{return {...prod,isAdded: cartItem[prod.prodId] || false}});
+        this._productDataService.getAllProducts().subscribe((response: Products[]) => {
+        //   this.homeProducts= response.map((prod)=>{return {...prod,isAdded: cartItem[prod.prodId] || false}});
+          this.homeProducts= response.filter((prod)=>{return {...prod,isAdded: true ? true : false}});
         });
     }
 

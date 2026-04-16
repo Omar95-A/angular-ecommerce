@@ -24,7 +24,7 @@ export const routes: Routes = [
         children: [
             {path: '', redirectTo: 'home', pathMatch: 'full'},
             {path: 'home', loadComponent:() => import('./pages/home/home.component').then((c)=>c.HomeComponent)},
-            {path: 'products', loadComponent:() => import('./pages/products/products.component').then((c)=>c.ProductsComponent)},
+            {path: 'products', loadComponent:() => import('./pages/products/products.component').then((c)=>c.ProductsComponent),},
             {path: 'details/:id', loadComponent:() => import('./pages/details/details.component').then((c)=>c.DetailsComponent), resolve: {details :productDetailsResolver}},
             {path: 'category', loadComponent:() => import('./pages/category/category.component').then((c)=>c.CategoryComponent)},
             {path: 'specificCategory/:type', loadComponent:() => import('./pages/specific-category/specific-category.component').then((c)=>c.SpecificCategoryComponent)},

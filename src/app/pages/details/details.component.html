@@ -14,12 +14,12 @@
                 <span class="desc">{{product.prodDec}}<span>%</span></span>
                 <span class="available">{{product.prodAva}}</span>
             </div>
-            <!-- @if (!product.isAdded){
-                <p-button (click)="addToCart(product.prodId);product.isAdded= true" label="ADD TO CART" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
+            @if (!product.isAdded){
+                <p-button (click)="addToCart(product.id);markAsAddedToCart(product)" label="ADD TO CART" styleClass="w-full" icon="pi pi-cart-plus" iconPos="right"/>
             }
             @if (product.isAdded) {
-                <p-button [routerLink]="['/cart']" label="Go TO CART" severity="help" styleClass="w-full" icon="pi pi-cart-arrow-down" iconPos="right"/>
-            } -->
+                <p-button (click)="markAsRemoveFromCart(product);removeFromCart(product)" label="REMOVE FROM CART" severity="danger" styleClass="w-full" icon="pi pi-cart-minus" iconPos="right"/>
+            }
         </div>
     </div>
 </div>

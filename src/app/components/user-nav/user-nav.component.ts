@@ -10,11 +10,12 @@ import { Route, Router, RouterLink } from '@angular/router';
 import { ToastModule } from 'primeng/toast';
 import { UserDataService } from '../../core/services/user-data.service';
 import { AuthService } from '../../core/services/auth.service';
+import { CartDataService } from '../../core/services/cart-data.service';
 
 @Component({
   selector: 'app-user-nav',
   standalone: true,
-  imports: [MenubarModule, BadgeModule, AvatarModule, InputTextModule, RippleModule, CommonModule, ToastModule],
+  imports: [MenubarModule, BadgeModule, AvatarModule, InputTextModule, RippleModule, CommonModule, ToastModule, RouterLink],
   templateUrl: './user-nav.component.html',
   styleUrl: './user-nav.component.scss',
   providers: [MessageService],
@@ -28,6 +29,7 @@ export class UserNavComponent implements OnInit {
     constructor(private messageService: MessageService, 
                 private _userdata: UserDataService, 
                 private _authService: AuthService, 
+                private _cartDataService: CartDataService, 
                 private _router: Router
                 ) {}
 
@@ -35,7 +37,7 @@ export class UserNavComponent implements OnInit {
         this.getName();
         this.getUserCountCart();
 
-        this._userdata.cartItemCount.subscribe((next)=> {this.cartItemCountFromUser = next})
+        this._cartDataService.cartItemCount.subscribe((next)=> {this.cartItemCountFromUser = next})
 
         this.items = [
             {
@@ -83,7 +85,7 @@ export class UserNavComponent implements OnInit {
 
     getUserCountCart() {
         const id = sessionStorage.getItem('toke') || '';
-        this._userdata.getCountCart(id).subscribe((next) => {
+        this._cartDataService.getCountCart(id).subscribe((next) => {
             this.cartItemCountFromUser = next.length
         });
         

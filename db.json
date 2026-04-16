@@ -93,25 +93,97 @@
       "email": "dd@d",
       "password": "d",
       "id": "ZDDfjLB2Eug"
-    }
-  ],
-  "cart": [
-    {
-      "userId": "Gsw8Q6JuIW4",
-      "productId": "1006",
-      "id": "s080TIBtAs8"
     },
     {
-      "userId": "Gsw8Q6JuIW4",
-      "productId": "1003",
-      "id": "YFpaezMqSvY"
+      "name": "Ahmed",
+      "email": "a@a",
+      "password": "a",
+      "cfpassword": "a",
+      "id": "zROafnfvxEQ"
     },
     {
-      "userId": "Gsw8Q6JuIW4",
-      "productId": "1004",
-      "id": "0VbsdhbFUbI"
+      "email": "a@a",
+      "password": "a",
+      "id": "5SZQn4b3Fkk"
+    },
+    {
+      "name": "Sara",
+      "email": "s@m",
+      "password": "a",
+      "cfpassword": "a",
+      "id": "EhzUpH1hTLA"
+    },
+    {
+      "email": "s@m",
+      "password": "a",
+      "id": "ZpnLE9Ccsfw"
+    },
+    {
+      "name": "s",
+      "email": "d@s",
+      "password": "s",
+      "cfpassword": "s",
+      "id": "9c6lrdzz6-I"
+    },
+    {
+      "email": "d@s",
+      "password": "s",
+      "id": "sdmCzJiweXI"
+    },
+    {
+      "email": "jj@s",
+      "password": "s",
+      "id": "bSoRM2lUgGM"
+    },
+    {
+      "name": "fa",
+      "email": "f@s",
+      "password": "s",
+      "cfpassword": "s",
+      "id": "z634gxs6xWk"
+    },
+    {
+      "email": "f@s",
+      "password": "s",
+      "id": "QsSYxPg7JWc"
+    },
+    {
+      "email": "dd@s",
+      "password": "s",
+      "id": "vaY3O7y5k7w"
+    },
+    {
+      "email": "ss@a",
+      "password": "h",
+      "id": "_dtmgZApwBc"
+    },
+    {
+      "email": "ff@s",
+      "password": "s",
+      "id": "llKa1Gs5Stw"
+    },
+    {
+      "email": "ss@s",
+      "password": "ss",
+      "id": "7S8NMMtn2fU"
+    },
+    {
+      "email": "om@m",
+      "password": "m",
+      "id": "mPB4f5R1Md8"
+    },
+    {
+      "email": "ss@s",
+      "password": "s",
+      "id": "v824AC1VtaM"
+    },
+    {
+      "email": "ssWs@s",
+      "password": "s",
+      "id": "brzAiF2Skkk"
     }
   ],
+  "cart": [],
   "logout": [
     {
       "id": "VZP9ZcdITcI"
@@ -138,23 +210,21 @@
       "prodCategory": "watch",
       "prodAva": "off",
       "isAdded": false,
-      "_id": "iSR1SqhjRi0",
-      "id": "hm9tkleHytg"
+      "id": "W4SGTICCSJI"
     },
     {
       "prodId": "1002",
       "prodImg": "blue-t-shirt.jpg",
       "prodTitle": "Blue T-Shirt",
       "prodDescretion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto cumque modi corrupti quas reiciendis fugit eum illum",
-      "prodOldPrice": 10,
+      "prodOldPrice": 1000,
       "prodPrice": 5,
       "prodDec": 50,
       "prodCategory": "clothes",
       "prodAva": "On",
       "isPopular": true,
       "isAdded": false,
-      "_id": "7Lp3Bu_OJ-s",
-      "id": "M1ryjALX928"
+      "id": "LUvHZQ47SRA"
     },
     {
       "prodId": "1003",
@@ -168,8 +238,7 @@
       "prodAva": "off",
       "isPopular": true,
       "isAdded": false,
-      "_id": "AiObYGwtQHI",
-      "id": "WgkIcxK3V0Y"
+      "id": "qa7FmlBLsnw"
     },
     {
       "prodId": "1004",
@@ -182,8 +251,7 @@
       "prodCategory": "electronic",
       "prodAva": "On",
       "isAdded": false,
-      "_id": "WbQtCRzgAUg",
-      "id": "YFiD_ATjAsQ"
+      "id": "MviBLo8urLc"
     },
     {
       "prodId": "1005",
@@ -197,8 +265,7 @@
       "prodAva": "off",
       "isPopular": true,
       "isAdded": false,
-      "_id": "X7urkVVqSsU",
-      "id": "98r4mXzNPAQ"
+      "id": "jpTqY_8ArG4"
     },
     {
       "prodId": "1006",
@@ -211,8 +278,7 @@
       "prodCategory": "electronic",
       "prodAva": "On",
       "isAdded": false,
-      "_id": "VSlF3bHcYmU",
-      "id": "PV7AuzsF0aM"
+      "id": "ThppDJ1_6k8"
     },
     {
       "prodId": "1007",
@@ -225,8 +291,7 @@
       "prodCategory": "clothes",
       "prodAva": "off",
       "isAdded": false,
-      "_id": "VSlF3bHcYuD",
-      "id": "4aAhckxSTHU"
+      "id": "O1E9t5zKpJw"
     },
     {
       "prodId": "1008",
@@ -239,8 +304,7 @@
       "prodCategory": "electronic",
       "prodAva": "off",
       "isAdded": false,
-      "_id": "VSlF3bHcYuk",
-      "id": "SJdDumiPYr4"
+      "id": "-0zse0UF9lc"
     },
     {
       "prodId": "1009",
@@ -254,8 +318,7 @@
       "prodAva": "On",
       "isNew": true,
       "isAdded": false,
-      "_id": "VSlF3bHcYfU",
-      "id": "AwDiy4jNklY"
+      "id": "qCW6Q9rJR70"
     },
     {
       "prodId": "1010",
@@ -269,8 +332,7 @@
       "prodAva": "On",
       "isNew": false,
       "isAdded": false,
-      "_id": "VSlF3bHcYuL",
-      "id": "4sGATj2UEWU"
+      "id": "werbaM0SE78"
     },
     {
       "prodId": "1011",
@@ -284,8 +346,7 @@
       "prodAva": "off",
       "isNew": false,
       "isAdded": false,
-      "_id": "VSlF3bHcYuA",
-      "id": "T8STIHU4odM"
+      "id": "6NbwUkCv3f8"
     },
     {
       "prodId": "1012",
@@ -299,8 +360,7 @@
       "prodAva": "on",
       "isNew": true,
       "isAdded": false,
-      "_id": "VSlF3bHcYuN",
-      "id": "epyuuR8dCn4"
+      "id": "iFugiaAote4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

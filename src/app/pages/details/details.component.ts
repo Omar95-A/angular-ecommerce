@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { UserDataService } from '../../core/services/user-data.service';
 import { ActivatedRoute } from '@angular/router';
 import { Products } from '../../core/interfaces/Products';
 import {  RouterLink } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
+import { CartDataService } from '../../core/services/cart-data.service';
 @Component({
   selector: 'app-details',
   standalone: true,
@@ -13,14 +13,12 @@ import { ButtonModule } from 'primeng/button';
 })
 export class DetailsComponent {
 
-  // productDetails: Products[] = []
-  // product: Products | null = null;
-
   productDetails!: Products[];
   product!: Products;
   id: string =''
 
-  constructor(private _userDataService: UserDataService, private _activatedRoute:ActivatedRoute) {}
+  constructor(private _activatedRoute: ActivatedRoute,
+              private _cartDataService: CartDataService,) {}
 
   ngOnInit() {
     this._activatedRoute.paramMap.subscribe((next: any) => this.id = next.params['id'])
@@ -31,18 +29,24 @@ export class DetailsComponent {
     this._activatedRoute.data.subscribe((data: any) => {
       this.productDetails = data.details
       this.product = this.productDetails[0]
-    
-        console.log(this.productDetails)
+        // console.log(this.productDetails)
     });
   }
 
-  // getProducts() {
-  //   this._userDataService.getDetails(this.id).subscribe((next) => {
-  //     this.productDetails = next;
-  //     this.product = this.productDetails[0]
-  //       // console.log(next)
-  //       // console.log(this.productDetails[0])
-  //   });
-  // }
+  addToCart(p: string) {
+    this._cartDataService.addToCart(p)
+  }
+
+  markAsAddedToCart(product: Products) {
+    this._cartDataService.markAsAddedToCart(product)
+  }
+
+  markAsRemoveFromCart(product: Products) {
+    this._cartDataService.markAsRemoveFromCart(product)
+  }
+
+  removeFromCart(p: Products) {
+    this._cartDataService.removeFromCart(p);
+  }
 
 }

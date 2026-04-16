@@ -1,5 +1,5 @@
 export interface Products {
-  _id: string;
+  id: string;
   prodId: string;
   prodImg: string;
   prodTitle: string;
@@ -12,4 +12,10 @@ export interface Products {
   isPopular: boolean;
   isAdded: boolean;
   isNew: boolean;
+}
+
+export interface ICart {
+  id: string;
+  userId: string;
+  prodId: string;
 }
