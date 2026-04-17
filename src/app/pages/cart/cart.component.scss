@@ -1,0 +1,29 @@
+
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card .prodTitle {
+    color: black;
+}
+.card .staricon {
+    color: #eab308 !important;
+}
+
+.starI {
+    border-radius: 30px;
+    box-shadow:2px 2px 3px 2px #eee !important;
+
+}
+.border-top-1 {
+
+    border-top-color: #cbc6c6 !important;
+}
+.btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

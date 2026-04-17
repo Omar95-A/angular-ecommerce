@@ -11,6 +11,7 @@ import { ToastModule } from 'primeng/toast';
 import { UserDataService } from '../../core/services/user-data.service';
 import { AuthService } from '../../core/services/auth.service';
 import { CartDataService } from '../../core/services/cart-data.service';
+import { Products } from '../../core/interfaces/Products';
 
 @Component({
   selector: 'app-user-nav',
@@ -25,6 +26,7 @@ export class UserNavComponent implements OnInit {
     items_user: MenuItem[] | undefined;
     userName: string =''
     cartItemCountFromUser: number = 0;
+   
 
     constructor(private messageService: MessageService, 
                 private _userdata: UserDataService, 
@@ -98,4 +100,6 @@ export class UserNavComponent implements OnInit {
         })
 
     }
+
+
 }

@@ -85,4 +85,28 @@ export class CartDataService {
   }
 
 
+  // getCartItems(): Observable<any> {
+  //   return this._httpClinet.get(`${apiUrl}/cart`)
+  // }
+
+  // getCartItem(product: Products) {
+  //   const storeCart = localStorage.getItem('cartItem') || '';
+  //   const obj = JSON.parse(storeCart);
+
+  //   // this.getCartItems().subscribe((nexr) => {nexr.prodId == product.id})
+
+  //   this._httpClinet.get(`${apiUrl}/products`)
+  //     .subscribe(() => {
+  //       console.log('obj',obj)
+  //       console.log('Deleted Successfully');
+  //       this.getCountCart('').subscribe((next) => {
+  //           this.cartItemCountFromCard = next.length
+  //           this.cartItemCount.next(this.cartItemCountFromCard)
+  //       });
+  //     });
+
+  //   delete obj[product.id];
+  //   localStorage.setItem('cartItem', JSON.stringify(obj));
+  // }
+
 }

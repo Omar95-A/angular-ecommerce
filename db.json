@@ -181,9 +181,37 @@
       "email": "ssWs@s",
       "password": "s",
       "id": "brzAiF2Skkk"
+    },
+    {
+      "email": "ff@d",
+      "password": "d",
+      "id": "kzsg8aiJKzA"
+    },
+    {
+      "name": "Ali",
+      "email": "a@a",
+      "password": "a",
+      "cfpassword": "a",
+      "id": "yI0HXnI_uHg"
+    },
+    {
+      "email": "a@a",
+      "password": "a",
+      "id": "JE2CqSq9jyA"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "prodId": "LUvHZQ47SRA",
+      "userId": "yI0HXnI_uHg",
+      "id": "tDXCw4_4Vu4"
+    },
+    {
+      "prodId": "qa7FmlBLsnw",
+      "userId": "yI0HXnI_uHg",
+      "id": "LksTiHFHXJ8"
+    }
+  ],
   "logout": [
     {
       "id": "VZP9ZcdITcI"
@@ -223,7 +251,7 @@
       "prodCategory": "clothes",
       "prodAva": "On",
       "isPopular": true,
-      "isAdded": false,
+      "isAdded": true,
       "id": "LUvHZQ47SRA"
     },
     {
@@ -237,7 +265,7 @@
       "prodCategory": "watch",
       "prodAva": "off",
       "isPopular": true,
-      "isAdded": false,
+      "isAdded": true,
       "id": "qa7FmlBLsnw"
     },
     {
