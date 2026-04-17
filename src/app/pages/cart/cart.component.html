@@ -3,8 +3,8 @@
         <ng-template pTemplate="list" let-products>
             <div class="grid grid-nogutter">
                 @for (item of cartProducts; track $index; let first = $first) {
-                    <div class="col-12"  class="col-12">
-                        <div class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3" [ngClass]="{ 'border-top-1 surface-border': !first }">
+                    <div class="col-12"  class="col-12" [routerLink]="['/details',item.id]">
+                        <div class="flex flex-column  cursor-pointer sm:flex-row sm:align-items-center m-4 gap-3" [ngClass]="{ 'border-top-1 surface-border': !first }">
                             <div class="md:w-10rem relative">
                                 <img class="block xl:block mx-auto border-round w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/'+item.prodImg"  [alt]="item.name" />
                                 <!-- <p-tag  [style.left.px]="4" [style.top.px]="4" /> -->
@@ -26,9 +26,9 @@
                                     <span class="text-xl font-semibold text-900">{{ '$' + item.prodPrice }}</span>
                                     <div class="flex flex-row-reverse md:flex-row gap-2">
 
-                                        <p-button icon="pi pi-heart" [outlined]="true" />
+                                        <p-button icon="pi pi-heart" [outlined]="true" (click)="$event.stopPropagation()" />
                                         <div class="btn-box">
-                                            <p-button icon="pi pi-shopping-cart" class="flex-auto md:flex-initial white-space-nowrap ak-btn" label="Buy Now" iconPos="right"/>
+                                            <p-button (click)="$event.stopPropagation()"; icon="pi pi-shopping-cart" class="flex-auto md:flex-initial white-space-nowrap ak-btn" label="Buy Now" iconPos="right"/>
                                             <p-button (click)="markAsRemoveFromCart(item);removeFromCart(item);$event.stopPropagation()" label="REMOVE" severity="danger" styleClass="" icon="pi pi-cart-minus" iconPos="right"/> 
                                         </div>
 

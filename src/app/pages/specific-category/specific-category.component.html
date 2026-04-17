@@ -24,7 +24,7 @@
                         <p-button (click)="addToCart(i.id);markAsAddedToCart(i);$event.stopPropagation()" label="ADD TO CART" styleClass="w-full" icon="pi pi-cart-plus" iconPos="right"/>
                     }
                     @if (i.isAdded) {
-                        <p-button (click)="markAsRemoveFromCart(i);removeFromCart(i);$event.stopPropagation()" label="REMOVE FROM CART" severity="danger" styleClass="w-full" icon="pi pi-cart-minus" iconPos="right"/>
+                        <p-button (click)="markAsRemoveFromCart(i);removeFromCart(i);$event.stopPropagation()" label="REMOVE CART" severity="danger" styleClass="w-full" icon="pi pi-cart-minus" iconPos="right"/>
                     }
                 </div>
             </div>

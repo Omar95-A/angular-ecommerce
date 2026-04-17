@@ -202,14 +202,19 @@
   ],
   "cart": [
     {
-      "prodId": "LUvHZQ47SRA",
-      "userId": "yI0HXnI_uHg",
-      "id": "tDXCw4_4Vu4"
-    },
-    {
       "prodId": "qa7FmlBLsnw",
       "userId": "yI0HXnI_uHg",
-      "id": "LksTiHFHXJ8"
+      "id": "j7ZzFUJnF0I"
+    },
+    {
+      "prodId": "ThppDJ1_6k8",
+      "userId": "yI0HXnI_uHg",
+      "id": "-vfDfB4lQZc"
+    },
+    {
+      "prodId": "iFugiaAote4",
+      "userId": "yI0HXnI_uHg",
+      "id": "vfLVmKUDExs"
     }
   ],
   "logout": [
@@ -251,7 +256,7 @@
       "prodCategory": "clothes",
       "prodAva": "On",
       "isPopular": true,
-      "isAdded": true,
+      "isAdded": false,
       "id": "LUvHZQ47SRA"
     },
     {
@@ -305,7 +310,7 @@
       "prodDec": 50,
       "prodCategory": "electronic",
       "prodAva": "On",
-      "isAdded": false,
+      "isAdded": true,
       "id": "ThppDJ1_6k8"
     },
     {
@@ -387,7 +392,7 @@
       "prodCategory": "accessory",
       "prodAva": "on",
       "isNew": true,
-      "isAdded": false,
+      "isAdded": true,
       "id": "iFugiaAote4"
     }
   ],
