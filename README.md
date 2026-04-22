@@ -1,6 +1,8 @@
 # AngularEcommerce
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+This project is a fully-featured web application  to sell products online. developed using Angular, PrimeNG, Bootstrap and Json Server. designed with scalability, performance, and user experience in mind. It provides a clean architecture that makes it easy to maintain, extend, and customize for future needs.
+This project is perfect for developers looking for a solid Angular foundation or a starting point for building advanced web applications.
+If you find this project useful, don’t forget to give it a star and support the repository!
 
 ## Development server
 
